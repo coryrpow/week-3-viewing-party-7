@@ -2,6 +2,6 @@
 
 <% @movies.each do |movie| %>
     <div id="movie-<%=movie.id%>">
-        <ul><%= link_to movie.title, movie_path(@user,movie) %> -- Rating: <%= movie.rating %>/10</ul>
+        <ul><%= link_to movie.title, movie_path(movie) %> -- Rating: <%= movie.rating %>/10</ul>
     </div>
 <% end %>
